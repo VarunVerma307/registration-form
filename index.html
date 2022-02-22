@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration Forms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Festive&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing : border-box;
+            margin : 0px;
+            padding : 0px;
+        }
+        body{
+            background-color: rgb(189, 194, 194);
+        }
+        .input{
+            margin-top: 10px;
+        }
+        .container{
+            background-image: url(https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg) ;
+            padding: 12px;
+            margin: 15px;
+            align-items: center;
+            width: 80%;
+            border-radius: 20px;
+        }
+        h1{
+            font-size: 50px;
+            font-family: 'Dancing Script', cursive;
+            margin-top: 100px;
+            margin-bottom: 10px;
+        }
+        a{
+            font-weight: bold;
+        }
+        .nav{
+            background-color: black; 
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 12px;
+            border-radius: 12px;
+        }
+        .nav ul a{
+            color: white;
+            font-weight: 100;
+            text-decoration: none;
+        }
+        .nav ul{
+            overflow: auto;
+        }
+        .nav li{
+            float: left;
+            margin-left: 70px;
+            font-size: 22px;
+            list-style: none;
+        }
+        .searchbox{
+           float: right;
+           margin-right: 30px;
+           margin-top: 7px;
+        }
+        .nav a:hover{
+            color:grey;
+        }
+        
+    </style>
+</head>
+<body>
+    <navbar>
+        <div class="nav">
+          <ul>
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Contact</a></li>
+              <li><a>Qualification</a></li>
+              <div class="searchbox">
+                <input type="text" placeholder="Search box">
+            </div>
+          </ul>
+        </div>
+    </navbar>
+       <center>
+            <h1>Welcome !</h1>
+            <h2>Registration Form</h2>
+           <div class="container">
+            <div class="input">
+               <label for="name" ><a>Name </a> </label>
+               <input type="text" placeholder="Enter your name"id="name">
+            </div>
+            <div class="input">
+                <label for="email" ><a>Email </a> </label>
+                <input type="email" placeholder="Enter your email"id="email">
+             </div>
+             <div class="input">
+                <label for="mobile no." ><a>Contact </a> </label>
+                <input type="number" placeholder="Enter your mobile number"id="mobile no.">
+             </div>
+             <div class="input">
+                <label for="gender" required><a>Gender </a> </label>
+                <input type="radio" id="male" name="gender" value="male">Male
+                <input type="radio" id="female" name="gender" value="female">Female
+             </div>
+            <div class="input">
+                <label for="dob"><a>DOB </a></label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="input">
+                <label for="class"><a>Class </a></label>
+                <select name="class" id="class">
+                    <option value="">select class</option>
+                    <option value="12th">12th</option>
+                    <option value="11th">11th</option>
+                    <option value="10th">10th</option>
+                    <option value="9th">9th</option>
+                    <option value="8th">8th</option>
+                    </select>
+            </div>
+            <div class="input">
+                <input type="submit" value="submit now">
+            </div>
+           </div>
+        </center>
+   
+   
+</body>
+</html>
